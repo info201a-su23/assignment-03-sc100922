@@ -51,6 +51,8 @@ I think the inconsistencies in the data will have an incalculable impact on the 
 ## Reflection 6
 Why were you interested in this particular question? Were you able to answer your question with code? What did you learn? Answer in at least 1-3 sentences
 
+I believe that 2022 was the year when COVID-19 had the most severe impact on the world, I am very curious about how many cases there were that year.  I was able to successfully answer my question with code.  I learned to use 'filter' to select data for 2022, and 'summarize' and 'mean' to calculate the average value of new cases.
+
 ## Reflection 7
 What, if anything, made you curious about this COVID analysis? What, if anything, surprised you? What might you do the same or differently on your next data wrangling project? Answer in at least 1-3 sentences
 
