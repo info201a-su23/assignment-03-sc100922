@@ -38,9 +38,14 @@ The county of King has the highest number of COVID-19 cases, approximately 563,0
 ## Reflection 4
 Why are there so many observations (counties) in the variable `lowest_deaths_in_each_state`? That is, wouldn't you expect the number to be around 50? Why is the number greater than 50? Answer in at least 1-3 sentences
 
+Because of the record of the data set, there are many counties that are duplicated in this variable such as Snohomish, Washington.
+
+
 
 ## Reflection 5
 What do you think about the number and scale of the inconsistencies in the data? Does the fact that there are inconsistencies mean that people should not use this data? Why or why not? Answer in at least 1-3 sentences
+
+I think the inconsistencies in the data will have an incalculable impact on the validity and reliability of the analysis results of the data, but if it is roughly the same, it can actually be used.  Because almost no two data sets are exactly the same due to the complexity of the world.
 
 
 ## Reflection 6
@@ -48,3 +53,5 @@ Why were you interested in this particular question? Were you able to answer you
 
 ## Reflection 7
 What, if anything, made you curious about this COVID analysis? What, if anything, surprised you? What might you do the same or differently on your next data wrangling project? Answer in at least 1-3 sentences
+
+Because COVID-19 is close to our lives, I'm curious about the impact that COVID-19 has had on the world over the years by studying datasets of cases and deaths. In the next data collation project, I'll do the same thing like look at some proportions.
