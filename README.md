@@ -1,4 +1,4 @@
-# A2: U.S. COVID Trends
+![image](https://github.com/info201a-su23/assignment-03-sc100922/assets/139248633/566711a1-6579-4ba1-904f-d6bac6457bbc)# A2: U.S. COVID Trends
 
 ## Overview
 In many ways, we have come to understand the gravity and trends in the COVID-19 pandemic through data. Regardless of media source, people are consuming more epidemiological information than ever, primarily through reported figures, charts, and maps.
@@ -16,16 +16,24 @@ You should start this assignment by opening up the `analysis.R` script. The scri
 Before actually calculating the total number of COVID cases and deaths, record your guesses for the following questions.
 
 Guess: How many total COVID cases do you think there have been in the U.S.?
+I think there are about 100 million cases of COVID-19 in the United States.
 
 Guess: How many total COVID-related deaths do you think there have been in the U.S.?
+I think about six million people have died in the United States because of COVID-19.
 
 Guess: Which state do you think has the highest number of COVID cases, and which state do you think has the lowest?
+I think New York State has the most COVID-19 cases and Hawaii has the least.
 
 ## Reflection 2
 Did the number of COVID cases and deaths surprise you? Why or why not? What about the states with the highest and lowest number of cases? How did your guesses line up with the actual results? Answer in at least 1-3 sentences
 
+I’m surprised by the number of COVID-19 cases and deaths because it's a huge number, and I'm shocked by how much COVID-19 has affected us, especially in California, which has the highest number of cases. American Samoa is fewer Covid cases which also surprised me. For all the Covid-19 cases in the U.S., my guess and the actual results were similar, and I guessed more than I actually did for the death number.
+
 ## Reflection 3
 Which county has the highest number of cases in the state of Washington, and does it surprise you? Why or why not? (You may need to google this county to learn about it) Answer at least in 1-3 sentences
+
+The county of King has the highest number of COVID-19 cases, approximately 563,019. This is surprising to me as it's far ahead of the second highest, which is a significant number.
+
 
 ## Reflection 4
 Why are there so many observations (counties) in the variable `lowest_deaths_in_each_state`? That is, wouldn't you expect the number to be around 50? Why is the number greater than 50? Answer in at least 1-3 sentences
