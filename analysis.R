@@ -77,10 +77,7 @@ total_us_deaths <- national %>%
 # this value `state_highest_cases`
 
 state_highest_cases <- states %>%
-  group_by(state) %>%
-  summarise(total_cases = sum(cases, na.rm = TRUE)) %>%
-  arrange(desc(total_cases)) %>%
-  slice(1) %>%
+  filter(cases== max(cases,na.rm = TRUE)) %>%
   pull(state)
 
 
@@ -88,11 +85,8 @@ state_highest_cases <- states %>%
 # number `num_highest_state`
 
 num_highest_state <- states %>%
-  group_by(state) %>%
-  summarise(total_cases = sum(cases, na.rm = TRUE)) %>%
-  arrange(desc(total_cases)) %>%
-  slice(1) %>%
-  pull(total_cases)
+  pull(cases) %>%
+ max(na.rm = TRUE)
 
 
 # 2.e Which state has the highest ratio of deaths to cases (deaths/cases), as of
@@ -128,11 +122,8 @@ state_lowest_cases <- states %>%
 # Make sure to pull() this NUMBER `num_highest_cases_county`
 
 num_highest_cases_county <- counties %>%
-  group_by(county) %>%
-  summarise(total_us_cases = sum(cases, na.rm = TRUE)) %>%
-  arrange(desc(total_us_cases)) %>%
-  slice(1) %>%
-  pull(total_us_cases)
+  pull(cases)%>%
+  max(na.rm = TRUE)
 
 
 # 2.h Which county had this highest number of cases? Make sure to pull() this
@@ -233,6 +224,7 @@ plot(national$date, national$new_deaths)
 
 highest_cases_in_each_state <- counties %>%
   group_by(state) %>%
+  filter(date == max(date)) %>%
   filter(cases == max(cases))
 
 # Reflection 3 (answer in README.md file)
@@ -250,6 +242,7 @@ highest_cases_in_each_state <- counties %>%
 
 lowest_deaths_in_each_state <- counties  %>%
    group_by(state) %>%
+   filter(date == max(date)) %>%
    filter(deaths == min(deaths))
 
 # Reflection 4 (answer in README.md file)
